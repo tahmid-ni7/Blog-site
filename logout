@@ -1,0 +1,12 @@
+=============================================
+Basic logout page
+=============================================
+
+<h4 class="message">Logout is successfull.</h4>
+<?php
+    unset($_SESSION['id']);
+    unset($_SESSION['name']);
+    unset($_SESSION['email']);
+    unset($_SESSION['contact']);
+    unset($_SESSION['type']);
+?>

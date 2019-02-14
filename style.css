@@ -1,0 +1,734 @@
+/*===============================================
+CSS INDEXING:
+1. Base CSS
+2. Slider area CSS
+3. Header area CSS
+4. Main menu CSS
+5. Footer CSS
+6. DROP DOWN CSS
+7. FORM CSS
+8. Comment area CSS
+9. Login form && Reg form CSS
+10. Others CSS
+=================================================*/
+
+
+/*===================== Base CSS =================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+section.section-padding {
+    padding: 80px 0;
+}
+
+
+/*===================== Slider area CSS ======================*/
+.slider-bg-1 {
+    background-image: url(assets/img/slider-bg-1.jpg);
+}
+
+.slider-bg-2 {
+    background-image: url(assets/img/slider-bg-2.jpg);
+}
+.single-slider-item {
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+    min-height: 350px;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.single-slider-item:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+6,777674+100 */
+    background: #000000;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 6%, #777674 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000 6%, #777674 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000 6%, #777674 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#777674', GradientType=0);
+    /* IE6-9 */
+    content: "";
+    opacity: .7;
+}
+
+.slider-text h2 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #11c0c580;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: 50px;
+    /* text-align: center; */
+}
+
+.slider-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slider-text p {
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.slider-text {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    width: 525px;
+}
+
+.slider-area .owl-dots div {
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+
+}
+
+.slider-area .owl-dots {
+    width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    bottom: 25px;
+}
+
+.slider-area .owl-dots div.active {
+    background: #11C0C5;
+}
+.welcome-area {
+    position: relative;
+}
+
+/*==================== Header area CSS =======================*/
+.header-area {
+    background: #555;
+    padding: 10px 0;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+}
+
+.logo i {
+    color: #fff;
+    font-size: 45px;
+}
+
+.logo h4 {
+    display: inline-block;
+    margin: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo h4 span {
+    color: #11C0C5;
+    font-weight: 300;
+}
+.logo img {
+    padding-bottom: 16px;
+    width: 38px;
+    height: 52px;
+    display: inline;
+}
+
+form.search-bar {
+    padding: 8px 0;
+    text-align: center;
+}
+
+form.search-bar input {
+    padding: 3px 10px;
+    border: none;
+    width: 50%;
+    border-radius: 4px;
+    background: #cbcbcbb3;
+    outline: none;
+}
+
+form.search-bar button {
+    background: none;
+    border: none;
+    color: #11C0C5;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form.search-bar input:focus {
+    background: #fff;
+    color: #333;
+}
+.absoulate-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: transparent;
+    position: fixed;
+}
+
+.sticky-header {
+    background-color: #381E13;
+    transition: .3s;
+}
+
+/*========================= Main menu CSS =====================*/
+.main-menu-area {
+    border-bottom: 1px solid #11C0C5;
+    border-top: 1px solid #11C0C5;
+    text-align: right;
+    background: #555555b8;
+}
+
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    padding: 3px 0;
+    position: relative;
+}
+
+.main-menu ul li a {
+    font-size: 15px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 6px;
+    transition: .3s;
+    border-right: 2px solid transparent;
+    text-transform: capitalize;
+}
+
+.main-menu ul li a:hover {
+    color: #11C0C5;
+    border-right: 2px solid #11C0C5;
+}
+
+.social-icon a {
+    color: #FFF;
+    padding: 6px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.social-icon {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.social-icon a {
+    border: 1px solid #11C0C5;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    background: #11C0C5;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+
+a.boxed-btn {
+    color: #fff;
+    background: #11C0C5;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/*====================== Footer CSS ======================*/
+footer {
+    background: #555;
+    padding: 25px 0;
+}
+
+.widget p {
+    color: #fff;
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+footer h3 {
+    color: #11C0C5;
+    text-transform: uppercase;
+}
+
+.footer-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.widget {
+    margin-right: 35px;
+}
+
+footer h5 {
+    color: #fff;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.subscribe-form {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.subscribe-form input {
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.subscribe-form input[type="text"] {
+    width: 250px;
+    color: #444;
+    background-color: #dddd;
+}
+
+.subscribe-form input[type="text"]:focus {
+    background: #fff;
+}
+
+.subscribe-form input[type="submit"] {
+    background-color: #11C0C5;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    margin-left: 2px;
+}
+
+.copy-right {
+    color: #888;
+    border-top: 1px solid #888;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+/* =======================
+DROP DOWN CSS
+=========================*/
+.main-menu ul li ul {
+    position: absolute;
+    display: block;
+    width: 160px;
+    text-align: left;
+    background-color: #381E13;
+    color: #fff;
+    left: 20px;
+    top: 45px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.main-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.main-menu ul li ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.main-menu ul li ul li {
+    display: block;
+}
+
+.main-menu ul li ul li:hover > a {
+    background: #11C0C5;
+    color: #fff;
+}
+
+/* =======================
+2nd and multilavel drop down.
+========================= */
+.main-menu ul li:hover ul ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-menu ul ul li:hover > ul {
+    left: 160px;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+/*==================
+FORM CSS
+====================*/
+.page-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+    background-color: #11C0C5;
+    padding: 6px 0;
+    color: #fff;
+}
+
+.page-warning {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+    background-color: #CB0000;
+    padding: 6px 0;
+    color: #fff;
+}
+
+h6 label {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+}
+
+p input,
+p textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+
+select {
+    padding: 10px;
+    border: 1px solid #dddd;
+    border-radius: 6px;
+    width: 35%;
+    margin-bottom: 15px;
+    outline: none;
+    color: #444;
+}
+
+p input[type="submit"] {
+    background-color: #11C0C5;
+    color: #fff;
+    width: 35%;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+p span.error {
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+.error {
+    color: #CB0000;
+}
+
+.errorMessage {
+    color: #CB0000;
+}
+
+.successMessage,
+.deleteMessage {
+    color: #11C0C5;
+}
+
+.deleteMessage {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.link-btn {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #0020B2;
+    border: 1px solid #0020B2;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.link-btn:hover {
+    color: #0020B2;
+}
+
+table {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+th {
+    background: #ddd;
+    color: #333;
+    padding: 10px 0px;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+}
+
+a.action-e,
+a.action-d {
+    background: #09722E;
+    padding: 3px 5px;
+    color: #fff;
+    margin-right: 10px;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+
+a.action-d {
+    background: #CB0000;
+}
+
+td:last-child,
+td:nth-child(1) {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #e8fcfd;
+}
+
+.single-article-area {
+    padding: 5px;
+    background: #f6f6f6;
+    margin: 5px 0;
+    min-height: 430px;
+}
+
+.news-img img {
+    width: 100%;
+    height: 215px;
+}
+
+a.news-title h3 {
+    color: #555;
+    background: #E8FCFD;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+a h3:hover {
+    color: #0033cc;
+    text-decoration-line: underline;
+}
+
+span.tag,
+b.category {
+    margin-right: 3px;
+    color: #11C0C5;
+}
+
+span#dt {
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+/*================= Comment area CSS ==================*/
+.comment-btn {
+    border: none;
+    background-color: #11C0C5;
+    padding: 12px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 2px 2px #dddd;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.comment-area {
+    margin-top: 35px;
+}
+
+.single-comment {
+    margin: 2px 0;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 12px;
+}
+
+textarea.comment {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+textarea.comment:focus {
+    background-color: #fff;
+}
+
+.all-comments {
+    margin-bottom: 15px;
+}
+
+.reg-btn {
+    background-color: #11C0C5;
+}
+
+a.reg-btn:hover {
+    color: #fff !important;
+}
+
+.login-icon,
+.reg-icon {
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+/*================ LOGIN FORM CSS && REG FORM CSS ===================*/
+.login-bg, .reg-bg {
+    background-color: #e8fcfd9e;
+}
+
+input.login-field {
+/*    border: none;*/
+/*    border-radius: unset;*/
+/*    border-bottom: 2px solid #ddd;*/
+    padding: 10px 8px;
+    width: 100%;
+}
+
+.login-wrap, .reg-wrap {
+    background: #fff;
+    margin: 30px 0;
+    padding: 50px 40px;
+    box-shadow: 5px 5px 80px #CDF2F3;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.forget-btn {
+    float: right;
+    color: #ddd;
+}
+
+a.sign-up-btn {
+    margin-left: 6px;
+    color: #11C0C5;
+}
+
+.log-title, .reg-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #11C0C5;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+form.login-form, form.reg-form {
+    margin-top: 65px;
+}
+
+/*===================================================*/
+
+.like-comment {
+    background: #E8FCFD;
+    padding: 10px 5px;
+}
+
+.like-comment a {
+    color: #333;
+}
+
+.ml,
+.com {
+    margin: 0 8px;
+    color: #444;
+    font-size: 20px;
+}
+
+.details-img img {
+    width: 80%;
+    margin: 1px;
+}
+h4.message {
+    text-transform: inherit;
+    color: #11C0C5;
+}
+h1.message {
+    text-transform: inherit;
+    font-size: 32px;
+    line-height: 1.4;
+}
