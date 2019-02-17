@@ -18,7 +18,7 @@ if(isset($_GET['unlikeId']))
 
 		$table = mysqli_query($cn, $sql);
 
-		print '<div class= "row">';
+		print '<div class= "row con-flex">';
 		while($row = mysqli_fetch_assoc($table))
 		{
             $likeUserNames = array();
