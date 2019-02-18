@@ -1,6 +1,6 @@
 <?php
 
-$sql = "select id, (select name from users where userId = id) as name, dateTime, comment from pageComments where pageId = ".$_GET['id'];
+$sql = "select id, (select name from users where userId = id) as name, dateTime, comment from pagecomments where pageId = ".$_GET['id'];
 $table = mysqli_query($cn, $sql);
 
 print '<div class = "all-comments">';
