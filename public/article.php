@@ -6,7 +6,7 @@ if(isset($_GET['likeId']))
 if(isset($_GET['unlikeId']))
 	makeunLike();
 
-		$sql = "select page.id, page.title, page.tag, page.dateTime,(select name from users where userId = id) as name, category.name as category, page.count, (select count(id) from pageComments where pageId = page.id) as comments from page left join category on page.categoryId = category.id";
+		$sql = "select page.id, page.title, page.tag, page.dateTime,(select name from users where userId = id) as name, category.name as category, page.count, (select count(id) from pagecomments where pageId = page.id) as comments from page left join category on page.categoryId = category.id";
 
 		if(isset($_GET['ctg']))
 		{
@@ -93,7 +93,7 @@ function subCategory(&$a, $ctg)
 function findLikes($pid, &$likeUserNames, &$likeUserIds)
 {
 	global $cn;
-	$sql = "select pl.userId, u.name, pl.dateTime from pageLikes as pl left join users as u on pl.userId = u.id where pl.pageId = ".$pid;
+	$sql = "select pl.userId, u.name, pl.dateTime from pagelikes as pl left join users as u on pl.userId = u.id where pl.pageId = ".$pid;
 	$table = mysqli_query($cn, $sql);
 	while($row = mysqli_fetch_assoc($table))
 	{
@@ -105,14 +105,14 @@ function findLikes($pid, &$likeUserNames, &$likeUserIds)
 function makeLike()
 {
 	global $cn;
-	$sql = "insert into pageLikes(pageId, userId) values(".$_GET['likeId'].", ".$_SESSION['id'].")";
+	$sql = "insert into pagelikes(pageId, userId) values(".$_GET['likeId'].", ".$_SESSION['id'].")";
 	mysqli_query($cn, $sql);
 }
 //======================= For delete the like...============================
 function makeunLike()
 {
 	global $cn;
-	$sql = "delete from pageLikes where pageId = ".$_GET['unlikeId']." and  userId = ".$_SESSION['id'];
+	$sql = "delete from pagelikes where pageId = ".$_GET['unlikeId']." and  userId = ".$_SESSION['id'];
 	mysqli_query($cn, $sql);
 	
 }
