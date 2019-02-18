@@ -13,7 +13,7 @@ if(isset($_POST['comment']))
 
     if($er == 0)
     {
-        $sql = "insert into pageComments(pageId, userId, comment) values(".$_GET['id'].", ".$_SESSION['id'].", '".$comment."' )";
+        $sql = "insert into pagecomments(pageId, userId, comment) values(".$_GET['id'].", ".$_SESSION['id'].", '".$comment."' )";
         if(!mysqli_query($cn, $sql))
         {
             print '<span class="error">'.mysqli_error($cn).'</span>';
