@@ -14,6 +14,4 @@ For better help and using the project please read the "read me.txt" file.
 
 Thanks from **Tahmid Nishat**
 
-### Live project view:
-you can see all **Features** of the project by clicking the link. https://blog-site007.000webhostapp.com 
 
